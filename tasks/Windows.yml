@@ -1,5 +1,5 @@
 ---
-# tasks file for ansible-role-molecule-linux-windows
+# tasks file for molecule-vagrant
 
 - name: Ensure configuration file is present
   win_template:
