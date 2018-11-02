@@ -1,5 +1,5 @@
 ---
-# tasks file for ansible-role-molecule-linux-windows
+# tasks file for molecule-vagrant
 
 - name: Ensure all tasks based on the distribution are loaded
   include_tasks: "{{ item }}"
