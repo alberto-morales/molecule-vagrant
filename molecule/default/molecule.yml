@@ -11,15 +11,15 @@ lint:
 platforms:
 
   - name: centos
-    box: bento/centos-7.4
+    box: bento/centos-7.5
     groups:
       - linux
 
   - name: vagrant-2012r2
-    box: opentable/win-2012r2-standard-amd64-nocm
-    memory: 2048
-    instance_raw_config_args:
-      - "vm.synced_folder './', '/vagrant', :mount_options => ['ro']"
+    box: adaptiveme/windows2012r2
+    memory: 4096
+    # instance_raw_config_args:
+    #   - "vm.synced_folder './', '/vagrant', :mount_options => ['ro']"
 
 provisioner:
   name: ansible
